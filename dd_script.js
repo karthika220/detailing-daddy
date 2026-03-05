@@ -2,7 +2,21 @@
    DETAILING DADDY — dd_script.js
    Handles: Hamburger, FAQ, Forms, Reviews
    Carousel, Scroll Shadow, Image fallbacks
+   GTM/GA4 Conversion Tracking
 ══════════════════════════════════════════ */
+
+// Initialize dataLayer if not already present
+window.dataLayer = window.dataLayer || [];
+
+// Helper function to push events to GTM/GA4
+function trackEvent(eventName, eventParams = {}) {
+  if (window.dataLayer) {
+    window.dataLayer.push({
+      event: eventName,
+      ...eventParams
+    });
+  }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -91,7 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Success - redirect to thank you page immediately
-      // Note: Message field and submit button are not modified/cleared
+      // Note: Form submission conversion is tracked on thank you page load, not here
+      // This ensures only successful form submissions are counted as conversions
       window.location.href = 'dd_thankyou.html';
     });
   }
@@ -188,6 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Update slider width on resize to show correct number of cards
+    function updateSliderWidth() {
+      // Slider width is handled by CSS, no JS needed
+    }
+
     window.addEventListener('resize', () => {
       updateSliderWidth();
     });
@@ -238,6 +257,51 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ph && ph.classList.contains('img-placeholder-text')) {
         ph.style.display = 'none';
       }
+    });
+  });
+
+
+  /* ─── 9. CONVERSION EVENT TRACKING ─── */
+  /* 
+   * ACCURATE CONVERSION TRACKING FOR CAMPAIGN OPTIMIZATION
+   * 
+   * Three conversion types:
+   * 1. whatsapp_conversion - All WhatsApp button clicks (grouped)
+   * 2. call_conversion - All call button clicks (grouped)
+   * 3. form_submission_conversion - Only tracked on thank you page (successful submissions only)
+   */
+  
+  // Track ALL WhatsApp button clicks as single conversion event
+  // This groups navbar WhatsApp, floating WhatsApp, and any other WhatsApp links
+  document.querySelectorAll('a[href*="wa.me"], .btn-wa-nav, .float-btn--wa').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Use setTimeout to ensure event fires before navigation
+      setTimeout(() => {
+        trackEvent('whatsapp_conversion', {
+          event_category: 'conversion',
+          event_label: 'whatsapp_click',
+          conversion_type: 'whatsapp',
+          conversion_value: 1,
+          conversion_event: true
+        });
+      }, 100);
+    });
+  });
+
+  // Track ALL call button clicks as single conversion event
+  // This groups floating call button and any other tel: links
+  document.querySelectorAll('a[href^="tel:"], .float-btn--call').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Use setTimeout to ensure event fires before navigation
+      setTimeout(() => {
+        trackEvent('call_conversion', {
+          event_category: 'conversion',
+          event_label: 'phone_call_click',
+          conversion_type: 'phone_call',
+          conversion_value: 1,
+          conversion_event: true
+        });
+      }, 100);
     });
   });
 

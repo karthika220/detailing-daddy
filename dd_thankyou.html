@@ -4,6 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You — Detailing Daddy</title>
+  
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PL36DL4J');</script>
+  <!-- End Google Tag Manager -->
+  
   <link rel="stylesheet" href="dd_style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,6 +82,10 @@
   </style>
 </head>
 <body class="thankyou-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL36DL4J"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ════════════════════════════════════════
        NAVBAR
@@ -75,10 +94,8 @@
     <div class="nav-inner">
       <a href="dd_index.html" class="nav-logo">
         <img src="assets/Logo.png" alt="Detailing Daddy" class="logo-img" onerror="this.style.display='none'" />
-        <span class="logo-fallback">
-          <span class="logo-icon">◆</span>
-          <span class="logo-text">DETAILING DADDY<sup>®©</sup></span>
-        </span>
+        
+       
       </a>
       <nav class="nav-links">
         <a href="dd_index.html#home">Home</a>
@@ -130,5 +147,18 @@
   </a>
 
   <script src="dd_script.js"></script>
+  <script>
+    // Track thank you page view as form submission conversion
+    // This ensures only successful form submissions are tracked (user reached thank you page)
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'form_submission_conversion',
+      event_category: 'conversion',
+      event_label: 'form_submission',
+      conversion_type: 'form_submission',
+      conversion_value: 1,
+      conversion_event: true
+    });
+  </script>
 </body>
 </html>
