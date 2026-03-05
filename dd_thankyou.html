@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Detailing Daddy</title>
+  <link rel="stylesheet" href="dd_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    .thankyou-page {
+      min-height: 100vh;
+      background: var(--primary);
+      display: flex;
+      flex-direction: column;
+    }
+    .thankyou-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 80px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      width: 100%;
+    }
+    .thankyou-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .thankyou-text {
+      max-width: 600px;
+      text-align: center;
+    }
+    .thankyou-heading {
+      font-family: var(--font-head);
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--black);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .thankyou-message {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+    @media (max-width: 960px) {
+      .thankyou-content {
+        padding: 60px 32px;
+      }
+      .thankyou-inner {
+        flex-direction: column;
+      }
+      .thankyou-heading {
+        font-size: 2.2rem;
+      }
+      .thankyou-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="thankyou-page">
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="dd_index.html" class="nav-logo">
+        <img src="assets/Logo.png" alt="Detailing Daddy" class="logo-img" onerror="this.style.display='none'" />
+        <span class="logo-fallback">
+          <span class="logo-icon">◆</span>
+          <span class="logo-text">DETAILING DADDY<sup>®©</sup></span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="dd_index.html#home">Home</a>
+        <a href="dd_index.html#about">About Us</a>
+        <a href="dd_index.html#services">Services</a>
+        <a href="dd_index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/917892108883" class="btn-wa-nav" target="_blank" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+        </a>
+        <a href="dd_index.html#contact" class="btn-nav-cta">Book Your Appointment</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="dd_index.html#home">Home</a>
+      <a href="dd_index.html#about">About Us</a>
+      <a href="dd_index.html#services">Services</a>
+      <a href="dd_index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       THANK YOU CONTENT
+  ════════════════════════════════════════ -->
+  <div class="thankyou-content">
+    <div class="thankyou-inner">
+      <!-- Left: Text Content -->
+      <div class="thankyou-text">
+        <h1 class="thankyou-heading">Your Car Is Booked for a Shine Upgrade!</h1>
+        <p class="thankyou-message">Thank you for choosing us for your car detailing service. Our team is getting ready to give your vehicle the premium care and flawless finish it deserves.</p>
+        <a href="dd_index.html#contact" class="btn-orange">Contact Our Team</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       FLOATING BUTTONS (CALL & WHATSAPP)
+  ════════════════════════════════════════ -->
+  <a href="tel:+917892108883" class="float-btn float-btn--call" aria-label="Call">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+  <a href="https://wa.me/917892108883" class="float-btn float-btn--wa" target="_blank" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+  </a>
+
+  <script src="dd_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detailing Daddy — JP Nagar, Bangalore</title>
+  <link rel="stylesheet" href="dd_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <!-- Replace with actual logo image -->
+        <img src="assets/Logo.png" alt="Detailing Daddy" class="logo-img" onerror="this.style.display='none'" />
+        <span class="logo-fallback">
+          
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/917892108883" class="btn-wa-nav" target="_blank" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+        </a>
+        <a href="#contact" class="btn-nav-cta">Book Your Appointment</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       SECTION 1 — HERO (Video Background)
+  ════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Video background — replace src with your video file -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/Hero Video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- Left: heading + CTAs -->
+      <div class="hero-left">
+        <h1 class="hero-heading">Protect Your Car with<br />Expert Detailing Services in<br />JP Nagar</h1>
+        <p class="hero-sub">Detailing Daddy provides professional paint protection film, all kinds of coatings, car accessories, and bike PPF and wash services for complete vehicle care in JP Nagar, Bangalore.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-orange">Schedule Your Appointment</a>
+          <a href="https://maps.google.com" target="_blank" class="btn-outline-white">Get Directions</a>
+        </div>
+      </div>
+
+      <!-- Right: lead form -->
+      <div class="hero-form-wrap">
+        <div class="hero-form">
+          <input type="text" placeholder="Name*" class="hf-input" />
+          <input type="tel" placeholder="Phone No*" class="hf-input" />
+          <input type="text" placeholder="Car or Bike Model*" class="hf-input" />
+          <select class="hf-select">
+            <option value="" disabled selected>Select Service*</option>
+            <option>Paint Protection Film</option>
+            <option>Ceramic Coating</option>
+            <option>Graphene Coating</option>
+            <option>Car Wrap</option>
+            <option>Car Polish</option>
+            <option>Interior Deep Cleaning</option>
+            <option>Car Wash</option>
+            <option>Car Interior PPF</option>
+            <option>Painting &amp; Denting</option>
+            <option>Bike PPF</option>
+            <option>Bike Wash</option>
+          </select>
+          <button type="button" class="btn-orange btn-full">Submit Your Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 2 — ABOUT US
+  ════════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <!-- Left -->
+      <div class="about-left">
+        <p class="section-tag">About Us</p>
+        <h2 class="section-heading">Premium Detailing with Trusted Results</h2>
+        <p class="section-body">Detailing Daddy offers premium car care using expertly trained professionals, advanced equipment and high-quality products, from car washes to graphene coatings and car accessories.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="feature-icon">
+              <img src="assets/Section 2/Icon 1.png" alt="Flawless Results" />
+            </div>
+            <div>
+              <h4>Flawless Results</h4>
+              <p>Precision detailing delivers lasting shine, protection, and showroom-level finish.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">
+              <img src="assets/Section 2/Icon 2.png" alt="Trusted Professionals" />
+            </div>
+            <div>
+              <h4>Trusted Professionals</h4>
+              <p>Experienced experts provide reliable, high-quality car detailing services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right: stats -->
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">5</span>
+          <span class="stat-label">YEARS OF EXPERTISE</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">10</span>
+          <span class="stat-label">TEAM WORKING</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">200</span>
+          <span class="stat-label">SATISFIED CUSTOMERS MONTHLY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 3 — CAR ACCESSORIES
+  ════════════════════════════════════════ -->
+  <section class="accessories-section">
+    <div class="accessories-inner">
+      <div class="acc-image">
+        <img src="assets/Section 3/Image.jpg" alt="Car Accessories" onerror="this.parentElement.classList.add('img-ph')" />
+        <div class="img-placeholder-text">Car accessories image</div>
+      </div>
+      <div class="acc-content">
+        <h2 class="section-heading">Car Accessories for Every Need</h2>
+        <p class="section-body">Shop genuine car accessories for your vehicle, explore interior and exterior add-ons, get expert fitting, and find everything you need to upgrade your car at our JP Nagar studio.</p>
+        <a href="#contact" class="btn-orange acc-btn">Shop Car Accessories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 4 — SERVICES GRID
+  ════════════════════════════════════════ -->
+  <section class="services-section" id="services">
+    <div class="services-inner">
+      <p class="section-tag">Services</p>
+      <h2 class="section-heading">Complete Detailing Solutions</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="assets/Section 4/Paint Protection Film.jpg" alt="Paint Protection Film" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Paint Protection Film</div>
+          <div class="service-label">Paint Protection Film</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Ceramic Coating.jpg" alt="Ceramic Coating" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Ceramic Coating</div>
+          <div class="service-label">Ceramic Coating</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Graphene Coating.jpg" alt="Graphene Coating" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Graphene Coating</div>
+          <div class="service-label">Graphene Coating</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Car Wrap.jpg" alt="Car Wrap" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Car Wrap</div>
+          <div class="service-label">Car Wrap</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Car Polish.jpg" alt="Car Polish" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Car Polish</div>
+          <div class="service-label">Car Polish</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Interior Deep Cleaning.jpg" alt="Interior Deep Cleaning" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Interior Deep Cleaning</div>
+          <div class="service-label">Interior Deep Cleaning</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Car Wash.jpg" alt="Car Wash" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Car Wash</div>
+          <div class="service-label">Car Wash</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Car Interior PPF.jpg" alt="Car Interior PPF" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Car Interior PPF</div>
+          <div class="service-label">Car Interior PPF</div>
+        </div>
+        <div class="service-card">
+          <img src="assets/Section 4/Painting & Denting.jpg" alt="Painting &amp; Denting" onerror="this.parentElement.classList.add('svc-ph')" />
+          <div class="svc-img-ph">Painting &amp; Denting</div>
+          <div class="service-label">Painting &amp; Denting</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 5 — BIKE CARE
+  ════════════════════════════════════════ -->
+  <section class="bike-section">
+    <div class="bike-inner">
+      <div class="bike-content">
+        <h2 class="section-heading">Ultimate Bike Care &amp; Protection</h2>
+        <p class="section-body">Protect your bike with high-quality Paint Protection Film, opt for professional wash and cleaning, receive expert installation, and maintain a flawless finish at our JP Nagar studio.</p>
+        <a href="#contact" class="btn-orange bike-btn">Contact Us Now</a>
+      </div>
+      <div class="bike-image">
+        <img src="assets/Section 5/Image.jpg" alt="Bike Care" onerror="this.parentElement.classList.add('img-ph')" />
+        <div class="img-placeholder-text">Bike image</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 6 — GOOGLE REVIEWS
+  ════════════════════════════════════════ -->
+  <section class="reviews-section">
+    <div class="reviews-inner">
+      <div class="reviews-widget">
+        <!-- Google bar -->
+        <div class="google-bar">
+          <span class="google-logo">
+            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+          </span>
+          <span class="google-excellent">Excellent</span>
+          <span class="stars-row">★★★★★</span>
+          <span class="google-score">4.7 | 74 reviews</span>
+          <a href="https://g.page/r/" target="_blank" class="btn-write-review">Write a review</a>
+        </div>
+        <!-- Review cards slider -->
+        <div class="reviews-wrapper">
+          <button class="carousel-btn carousel-prev" id="reviewPrev" aria-label="Previous">&#8249;</button>
+          <div class="reviews-track-outer">
+            <div class="reviews-slider" id="reviewsSlider">
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">md</div>
+                <div>
+                  <p class="reviewer-name">md Siddiq</p>
+                  <p class="review-date">3 days ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Excellent work on seat covers. Kudos to Uniq customz… Appreciate the good work. Genuine quality of all type of car accessories, car wash and other works.. Highly recommended.</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">VV</div>
+                <div>
+                  <p class="reviewer-name">Vivek Viswa</p>
+                  <p class="review-date">3 days ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Went for Car Stabilizer Pro &amp; Car wash. The Service is good. And the Owner is a very nice person. He takes individual care of every vehicle. Hats off to their service!!</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">SB</div>
+                <div>
+                  <p class="reviewer-name">sunil behara</p>
+                  <p class="review-date">3 days ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Its a nice place to chill out while your car gets washed. Also you have a beautiful lounge to relax and also shop out of many accessories.</p>
+            </div>
+            <!-- Review 4 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">RK</div>
+                <div>
+                  <p class="reviewer-name">Rahul Kumar</p>
+                  <p class="review-date">1 week ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Got ceramic coating done here. The finish is absolutely showroom quality. Professional team and very transparent pricing. Will definitely come back.</p>
+            </div>
+            <!-- Review 5 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">RS</div>
+                <div>
+                  <p class="reviewer-name">Rahul Sharma</p>
+                  <p class="review-date">2 weeks ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Amazing service! Got PPF installed on my car and the quality is outstanding. The team is professional and the finish is flawless. Highly recommend!</p>
+            </div>
+            <!-- Review 6 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">AK</div>
+                <div>
+                  <p class="reviewer-name">Arjun Kumar</p>
+                  <p class="review-date">2 weeks ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Best car detailing service in JP Nagar! The graphene coating they applied looks fantastic and the protection is excellent. Worth every rupee spent.</p>
+            </div>
+            <!-- Review 7 -->
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar" style="background:#C86D1A">KR</div>
+                <div>
+                  <p class="reviewer-name">Karthik R</p>
+                  <p class="review-date">3 weeks ago</p>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Professional service with attention to detail. Got interior deep cleaning done and my car looks brand new. The team is knowledgeable and friendly.</p>
+            </div>
+          </div>
+          </div>
+          <button class="carousel-btn carousel-next" id="reviewNext" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 7 — CONTACT (Map + Form)
+  ════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <!-- Map -->
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8234!2d77.5937!3d12.9081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae151e8b9a5c1d%3A0x5b2e5f9f8a5c5e5f!2sJP%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Detailing Daddy Location">
+        </iframe>
+      </div>
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <div class="contact-form-grid">
+          <input type="text" placeholder="Name*" class="cf-input" />
+          <input type="tel" placeholder="Phone No*" class="cf-input" />
+          <input type="text" placeholder="Car or Bike Model*" class="cf-input" />
+          <select class="cf-input cf-select">
+            <option value="" disabled selected>Services*</option>
+            <option>Paint Protection Film</option>
+            <option>Ceramic Coating</option>
+            <option>Graphene Coating</option>
+            <option>Car Wrap</option>
+            <option>Car Polish</option>
+            <option>Interior Deep Cleaning</option>
+            <option>Car Wash</option>
+            <option>Car Interior PPF</option>
+            <option>Painting &amp; Denting</option>
+          </select>
+          <textarea placeholder="Message" class="cf-input cf-textarea" rows="5"></textarea>
+        </div>
+        <button type="button" class="btn-orange btn-submit-enquiry">Submit Enquiry</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 8 — FAQ
+  ════════════════════════════════════════ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Does Detailing Daddy protection help against small scratches?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, it helps reduce the appearance of minor scratches and keeps your vehicle's surface protected.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What does Graphene and Ceramic surface protection mean in car detailing?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It refers to advanced coating technologies that enhance shine, resist contaminants, and improve long-term paint durability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Will Detailing Daddy PPF affect the appearance of the car?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No, paint protection film is transparent and enhances gloss while maintaining the car's original look.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Are there any offers available for Detailing Daddy PPF services?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, discounts on ceramic coating and PPF services are offered from time to time. Contact directly or visit our studio in JP Nagar for current deals.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can Detailing Daddy clean only the interior?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, interior-only cleaning is available, including seats, carpets, dashboard, panels, and interiors without affecting the exterior paint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 9 — FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/Logo.png" alt="Detailing Daddy" class="footer-logo" onerror="this.style.display='none'" />
+        <div class="footer-logo-fallback">
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <p>+91 78921 08883</p>
+        <p>Shiva Skanda Building, Kanakapura Main Rd, beside TATA Key Motors, Jarganahalli, JP Nagar Phase 6, J. P. Nagar, Bengaluru, Karnataka 560078</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Detailing Daddy All rights reserved &nbsp;|&nbsp; Marketed By <a href="https://www.profitcast.com" class="pc-link" target="_blank">Profitcast</a> — Efficient growth, delivered.</p>
+      <div class="footer-legal">
+        <a href="#">Terms &amp; Condition</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════
+       FLOATING BUTTONS (CALL & WHATSAPP)
+  ════════════════════════════════════════ -->
+  <a href="tel:+917892108883" class="float-btn float-btn--call" aria-label="Call">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+  <a href="https://wa.me/917892108883" class="float-btn float-btn--wa" target="_blank" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+  </a>
+
+  <script src="dd_script.js"></script>
+</body>
+</html>
