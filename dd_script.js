@@ -252,12 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ─── 8. SMOOTH IMAGE ERROR HANDLING ─── */
   document.querySelectorAll('img').forEach(img => {
     img.addEventListener('error', () => { img.style.display = 'none'; });
-    img.addEventListener('load', () => {
-      const ph = img.nextElementSibling;
-      if (ph && ph.classList.contains('img-placeholder-text')) {
-        ph.style.display = 'none';
-      }
-    });
   });
 
 
